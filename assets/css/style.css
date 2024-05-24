@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  background-color: #1C0A00;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav img {
+
+  margin: auto 0;
+
+}
+
+nav a {
+  padding: 8px 20px;
+  background-color: transparent !important;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 0.9em;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+
+.post {
+  flex-grow: 1;
+  box-sizing: border-box;
+  flex-basis: 33.3%;
+  transition: all 200ms ease-out;
+  border-radius: 20px;
+}
+
+.hover-gold:hover {
+  box-shadow: 0 0 6px #CC9544;
+}
+
+.slider-btn {
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: #FFF;
+  border: 0;
+  background-color: transparent;
+  font-weight: bold;
+  border-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  transition: all .3s;
+}
+
+.navigator-slider {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  bottom: 1%;
+  right: 1%;
+}
+
+
+footer {
+  text-align: center;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-size: 1.3em;
+  margin: 10px 5px;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+a:active {
+  text-decoration: none;
+  color: green;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.footer {
+  background-color: #1C0A00;
+  color: #FFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.credits a {
+  color: #FFCC29;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+
+#content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#about-card {
+  background: rgb(255, 255, 255);
+  color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+}
+#tickets {
+  color: rgb(103, 21, 103);
+}
+#tickets label, #tickets input, #tickets button {
+  color: #fff;
+}
+#ticket-form {
+  background: rgba(137, 11, 159, 0.508);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Basic styles for the transparent cards */
+.transparent-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive card width */
+.transparent-card {
+  width: 90%; /* Default width for small screens */
+}
+
+@media (min-width: 576px) {
+  .transparent-card {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .transparent-card {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .transparent-card {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .transparent-card {
+    width: 50%;
+  }
+}
+
+/* Style for the video background */
+#video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}

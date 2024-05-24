@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDW 9_20220140141</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@4.1.0/bootstrap-4.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: darkcyan;">
+    <div class="container">
+      <a class="navbar-brand" href="#">Penjualan Masker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" style="font-size: 23px;">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#order" style="font-size: 23px;">Order</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <section id="about" class="mb-5">
+      <div class="card transparent-card">
+        <div class="card-body">
+          <h2>About Our Masks</h2>
+          <p>Selama pandemi COVID-19, menjaga kesehatan dan keselamatan diri serta orang-orang di sekitar kita menjadi prioritas utama. Masker menjadi salah satu alat paling penting untuk mencegah penyebaran virus. Kami hadir untuk memberikan solusi perlindungan yang terbaik melalui berbagai jenis masker berkualitas tinggi. Berikut adalah keunggulan masker kami:</p>
+          <p>Masker kami terbuat dari bahan berkualitas tinggi yang dirancang untuk melindungi Anda dari polusi, debu, dan virus. Kami menyediakan berbagai jenis masker yang nyaman digunakan sepanjang hari.</p>
+          <p>Kami berkomitmen untuk mendukung upaya pencegahan penyebaran COVID-19 dengan menyediakan masker yang berkualitas dan aman. Setiap pembelian masker dari kami adalah bagian dari kontribusi Anda dalam menjaga kesehatan komunitas kita.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="order">
+      <div class="card transparent-card p-3 mb-3">
+        <div class="card-body">
+          <h2>Order Form</h2>
+          <form id="mask-order-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="Amount">Amount:</label>
+              <input type="number" class="form-control" id="Amount" placeholder="How Much?" required>
+            </div>
+            <div class="form-group">
+              <label for="mask-type">Mask Type:</label>
+              <select class="form-control" id="mask-type" required>
+                <option value="surgical">Surgical Mask</option>
+                <option value="n95">N95 Mask</option>
+                <option value="cloth">Cloth Mask</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Additional Features:</label><br>
+              <input type="checkbox" id="filter" name="features" value="Filter">
+              <label for="filter">Extra Filter</label><br>
+              <input type="checkbox" id="antibacterial" name="features" value="Antibacterial">
+              <label for="antibacterial">Antibacterial</label><br>
+              <input type="checkbox" id="washable" name="features" value="Washable">
+              <label for="washable">Washable</label><br>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" class="btn btn-secondary" onclick="resetForm()">Reset</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <video id="video-background" autoplay muted loop>
+      <source src="assets/masker.mp4" type="video/mp4"> 
+    </video>
+    
+
+  </div>
+
+  <footer class="footer mt-auto py-3" style="background-color:darkcyan;">
+    <div class="container text-center">
+      <p class="mb-0 text-white">Penjualan Masker</p>
+    </div>
+    <div class="credits">
+      Designed by
+      <a href="https://github.com/Harizmudrik" target="_blank">Muhammad Hariz Mudrik</a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
